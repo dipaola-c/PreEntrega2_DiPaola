@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color:lightpink;
+}
+
+
+
+/*sobre nav y el menú*/
+nav{
+    padding: 1rem;
+
+}
+
+.menu{
+    list-style-type: none;
+    margin: 10px;
+    background-color: lightpink;
+    text-align: right;
+    
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    margin:10px;
+    background-color: orange;
+    padding: 10px;
+}
+.menu li a{
+    text-decoration: none;
+    padding: 5px;
+    color:black;
+}
+.menu li:hover{
+    background-color: lightpink;
+    border-radius: 20px;
+}
+.menu li a:hover{
+    color:lightsalmon;
+}
+
+
+/* @font-face {
+    font-family:"Courgette";
+    src: url("./Courgette/Courgette-Regular.ttf");
+} */
+
+
+/*tipografía sólo del título/logo*/
+@font-face {
+    font-family:"Kaushan_Script";
+    src: url("./Kaushan_Script/KaushanScript-Regular.ttf");
+}
+
+/*del estilo de los títulos*/
+h1 {
+    font-family:"Kaushan_Script";
+    color: rgb(128, 32, 32);
+    
+}
+
+h2 {
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(128, 32, 32);
+}
+
+
+
+
+.presentacion {
+    width: auto;
+    height: 900px;
+    /*padding: 0px;
+    margin:0px; */
+    border: 0.5px solid grey;
+    background-image: url("/PreEntrega2_DiPaola/img/fondo1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.whatsapp {
+    width:40px;
+    height:auto; 
+    background-color:none;
+    position: sticky;
+    top: 10px;
+}
+
+.descripcion {
+    background-color: lightpink;
+    width: auto;
+    height: 800px;
+}
+
+
+
+footer {
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    background-color: lightgrey;
+
+}
