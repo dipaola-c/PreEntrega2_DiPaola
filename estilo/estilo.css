@@ -97,7 +97,18 @@ h2 {
     height: 800px;
 }
 
+.productosTotales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+}
 
+.productos {
+    width: auto;
+    height:auto;
+}
 
 footer {
     box-sizing: border-box;
