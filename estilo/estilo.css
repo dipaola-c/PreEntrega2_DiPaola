@@ -5,22 +5,132 @@
 }
 
 
-header{
-    background-color:lightpink;
+/* .grilla {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-areas:
+      "header header"
+      "main aside"
+      "footer footer";
+} */
+
+/*vista mobile*/
+/* @media only screen and (min-width: 0px) and (max-width: 767px){
+	.grilla {
+    display: grid;
+    grid-template-columns: 50% 50%;
+	grid-template-rows: 100px 70px auto;
+    grid-template-areas:
+      "header header"
+      "main aside"
+      "footer footer";
+ }
+    header {grid-area:header;
+        display: flex;
+        justify-content: center;} 
+        
+    div.navIzq{grid-area: navIzq;} 
+    
+    .navIzq ul, .navDer ul {
+        display: flex; justify-content: space-around;} 
+    li{
+        padding: 10px; list-style-type: none;} 
+    div.navDer{
+        grid-area: navDer;} 	
+    section.section1{
+        grid-area: section1;} 
+    section.section2{
+        grid-area: section2;} 
+    footer{
+        grid-area: footer;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;} }
+  */
+
+/*vista desktop*/
+/* @media only screen and (min-width: 768px){
+	.gridContainer{
+			display: grid;grid-template-areas:
+			"navIzq navIzq header header navDer navDer"	"parrafo parrafo parrafo img img img""footer footer footer footer footer footer"; grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;grid-template-rows: 100px auto 200px; }
+		header{grid-area:header; text-align: center;}
+		div.navIzq{grid-area: navIzq;} .navIzq ul, .navDer ul {display: flex; justify-content: space-around;}
+		li{padding: 10px; list-style-type: none; position: relative; top: 20px;}
+		div.navDer{grid-area: navDer;}
+		section.parrafo{grid-area: parrafo;}
+		section.imgParrafo{grid-area: img;}
+		footer{grid-area: footer;display:flex; justify-content: space-around;}	
+} */
+
+
+.fondo {
+    /* grid-area: presentacion; */
+    width: auto;
+    height: 700px;
+    background-image: url("/PreEntrega2_DiPaola/img/fondo3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.whatsapp {
+    background-color:none;
+    position: sticky;
+    top: 180px;
+    width: auto;
+    height: auto;
+}
+
+/*header*/
+    /*header grid*/
+.header{
+    /* grid-area: header; */
+    background-color:rgba(255, 182, 193, 0.6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:sticky; /* se pega el elemento como el fixed pero cuando llega a la posición indicada */
+    top:0px;
+    left:0px;
+}
+
+.header img{
+    width: 110px;
+    height: 110px;
+    border-radius: 20px;
+    padding:10px;
+}
+
+.header h1 {
+    font-family:"Kaushan_Script";
+    color: rgb(128, 32, 32);
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-
 /*sobre nav y el menú*/
+    /*nav grid*/
 nav{
+    /* grid-area: nav; */
     padding: 1rem;
-
+    font-family: "Kaushan_Script";
 }
 
 .menu{
     list-style-type: none;
     margin: 10px;
-    background-color: lightpink;
     text-align: right;
     
 }
@@ -28,7 +138,7 @@ nav{
     display: inline-block;
     text-align: center;
     margin:10px;
-    background-color: orange;
+    background-color: #f08c4a93;
     padding: 10px;
 }
 .menu li a{
@@ -36,19 +146,14 @@ nav{
     padding: 5px;
     color:black;
 }
+
 .menu li:hover{
-    background-color: lightpink;
+    background-color:rgba(240, 231, 232, 0.6);
     border-radius: 20px;
 }
 .menu li a:hover{
     color:lightsalmon;
 }
-
-
-/* @font-face {
-    font-family:"Courgette";
-    src: url("./Courgette/Courgette-Regular.ttf");
-} */
 
 
 /*tipografía sólo del título/logo*/
@@ -57,63 +162,103 @@ nav{
     src: url("./Kaushan_Script/KaushanScript-Regular.ttf");
 }
 
-/*del estilo de los títulos*/
-h1 {
-    font-family:"Kaushan_Script";
-    color: rgb(128, 32, 32);
-    
-}
 
-h2 {
-    font-family:'Courier New', Courier, monospace;
-    color: rgb(128, 32, 32);
-}
-
-
-
-
-.presentacion {
-    width: auto;
-    height: 900px;
-    /*padding: 0px;
-    margin:0px; */
-    border: 0.5px solid grey;
-    background-image: url("/PreEntrega2_DiPaola/img/fondo1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.whatsapp {
-    width:40px;
-    height:auto; 
-    background-color:none;
-    position: sticky;
-    top: 10px;
-}
-
-.descripcion {
-    background-color: lightpink;
-    width: auto;
-    height: 800px;
-}
-
-.productosTotales {
+aside{
+    box-sizing: content-box;
+    margin: 30px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: stretch;
     align-content: stretch;
 }
 
-.productos {
-    width: auto;
-    height:auto;
+.caracteristica {
+    width:300px;
+    height: auto;
+    margin:auto;
+    text-align: center;
 }
 
-footer {
+.separador {
+    background-color: rgba(228, 176, 79, 0.438);
+    width:auto;
+    height:50px;
+    text-align: center;
+}
+
+    /*footer grid*/
+.footer {
+    /* grid-area: footer; */
     box-sizing: border-box;
     padding: 10px;
     text-align: center;
     background-color: lightgrey;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
 }
+
+
+.footer .redes {
+    width:300px;
+    height: auto;
+    margin:auto;
+}
+
+.footer .ubicacion {
+    width:300px;
+    height: auto;
+    margin:auto;
+}
+
+/*PAGINA PRODUCTOS*/
+main#productosTotales {
+    background-color: rgb(175, 127, 134);
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    display: flex; /*las cajas, haganse flexibles independientemente del tamaño, para que entren en su padre contenedor*/
+    flex-direction: row; /*column, hay mas*/
+    flex-wrap: wrap;/*tres opciones, nowrap, wrap y wrap diverse, por defecto es nowrap*/
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+}
+
+.producto {
+    width: 30%;
+    height: 10%;
+    margin: 0.9rem;
+}
+
+
+/*PAGINA NOSOTROS*/
+
+
+
+/*PAGINA ALIMENTACION*/
+.imagenAlimentacion1 {
+/*alinear izq*/
+}
+
+
+.imagenAlimentacion2 {
+/*alinear der*/
+}
+
+.imagenAlimentacion3 {
+    /*alinear izq*/
+}
+
+/.imagenAlimentacion4 {
+    /*alinear der*/
+}
+
+
+
+
+
+/*PAGINA CONTACTO*/
