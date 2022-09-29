@@ -77,8 +77,8 @@
     background-color:none;
     position: sticky;
     top: 160px;
-    width: auto;
-    height: auto;
+    width: 40px;
+    height: 40px;
 }
 
 /*header*/
@@ -121,16 +121,26 @@ nav{
 
 .menu{
     list-style-type: none; /*que no tenga puntito la lista*/
-    margin: 10px;
+    margin: 7px;
     text-align: right;
     
 }
 .menu li{
     display: inline-block; 
     text-align: center;
+    width: auto;
     margin:10px;
     background-color: #f08c4a93;
     padding: 10px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block !important;  
 }
 
 .menu li a{
@@ -143,8 +153,15 @@ nav{
     background-color:rgba(240, 231, 232, 0.6);
     border-radius: 20px;
 }
+
 .menu li a:hover{
     color:lightsalmon;
+}
+
+ul li:hover ul{
+    background-color:rgba(240, 231, 232, 0.6);
+    display: block;
+
 }
 
 
@@ -234,7 +251,21 @@ aside{
 
 
 /*PAGINA PRODUCTOS*/
+/* ver de hacerlo con grid!! */
 #productosTotales {
+    background-color: rgb(39, 88, 180);
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    display: flex; /*las cajas, haganse flexibles independientemente del tamaño, para que entren en su padre contenedor*/
+    flex-direction: column; /*column, hay mas*/
+    flex-wrap: nowrap;/*tres opciones, nowrap, wrap y wrap diverse, por defecto es nowrap*/
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+}
+
+#panesPizzas, #budinesMuffins, #tortas{
     background-color: rgb(39, 88, 180);
     width: auto;
     height: auto;
@@ -264,6 +295,8 @@ aside{
     width: 500px;
     height: 700px;
 }
+
+
 
 /*PAGINA NOSOTROS*/
 .nosotros {
