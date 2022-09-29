@@ -71,13 +71,12 @@
     background-image: url("/PreEntrega2_DiPaola/img/fondo3.png");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .whatsapp {
     background-color:none;
     position: sticky;
-    top: 180px;
+    top: 160px;
     width: auto;
     height: auto;
 }
@@ -85,12 +84,12 @@
 /*header*/
     /*header grid*/
 .header{
-    /* grid-area: header; */
+    grid-area: header;
     background-color:rgba(255, 182, 193, 0.6);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position:sticky; /* se pega el elemento como el fixed pero cuando llega a la posición indicada */
+    position:sticky; /*se pega el elemento como el fixed pero cuando llega a la posición indicada */
     top:0px;
     left:0px;
 }
@@ -107,40 +106,33 @@
     color: rgb(128, 32, 32);
 }
 
-h2 {
+h1, h2, h3, p {
     font-family: Arial, Helvetica, sans-serif;
 }
-
-h3 {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 
 /*sobre nav y el menú*/
     /*nav grid*/
 nav{
     /* grid-area: nav; */
+    width: auto;
     padding: 1rem;
     font-family: "Kaushan_Script";
 }
 
 .menu{
-    list-style-type: none;
+    list-style-type: none; /*que no tenga puntito la lista*/
     margin: 10px;
     text-align: right;
     
 }
 .menu li{
-    display: inline-block;
+    display: inline-block; 
     text-align: center;
     margin:10px;
     background-color: #f08c4a93;
     padding: 10px;
 }
+
 .menu li a{
     text-decoration: none;
     padding: 5px;
@@ -178,18 +170,29 @@ aside{
     height: auto;
     margin:auto;
     text-align: center;
+    padding: 30px;
+}
+
+.caracteristica p {
+    padding: 10px;
+}
+
+.caracteristica h1:hover{
+    color:rgba(56, 50, 51, 0.233);
+    border-radius: 20px;
 }
 
 .separador {
     background-color: rgba(228, 176, 79, 0.438);
     width:auto;
-    height:50px;
+    height:auto;
     text-align: center;
+    padding-top:13px;
 }
 
     /*footer grid*/
 .footer {
-    /* grid-area: footer; */
+    grid-area: footer;
     box-sizing: border-box;
     padding: 10px;
     text-align: center;
@@ -208,15 +211,31 @@ aside{
     margin:auto;
 }
 
-.footer .ubicacion {
-    width:300px;
-    height: auto;
-    margin:auto;
+.footer p{
+    padding: 10px;
 }
 
+.footer a{
+    margin: 10px;
+}
+
+.footer .ubicacion {
+    width:800px;
+    height: auto;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
 /*PAGINA PRODUCTOS*/
-main#productosTotales {
-    background-color: rgb(175, 127, 134);
+#productosTotales {
+    background-color: rgb(39, 88, 180);
     width: auto;
     height: auto;
     padding: 0.5rem;
@@ -228,33 +247,110 @@ main#productosTotales {
     align-content: stretch;
 }
 
-.producto {
-    width: 30%;
-    height: 10%;
+/*div de producto*/
+#productosTotales .producto {
+    width: auto;
+    height: auto;
     margin: 0.9rem;
 }
 
+/*img*/
+#productosTotales .producto img{
+    width: 200px;
+    height: 200px;
+}
+
+.instagram-media {
+    width: 500px;
+    height: 700px;
+}
 
 /*PAGINA NOSOTROS*/
+.nosotros {
+    background-color: rgb(184, 176, 153);
+    text-align: center;
+    padding:30px;
+    margin: 0px;;
+}
 
+.nosotros h1, h2, p {
+    padding: 3px;
+}
 
 
 /*PAGINA ALIMENTACION*/
-.imagenAlimentacion1 {
-/*alinear izq*/
+.grilla {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "section1 section "
+      "section2 section3 "
+      "section5 section4 "
+      "section6 section7 "
+      "footer footer ";
+    grid-template-rows: auto 500px 500px 500px 500px auto;
+    grid-template-columns: 1fr 1fr;
+ }
+
+
+.alimentacion {
+    grid-area: section;
+    text-align:center;
+    margin: 0px auto; /*centra la section dentro de la grilla*/
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 50px;
 }
 
+.imagenAlimentacion1 {
+    grid-area: section1;
+    text-align:center;
+    margin: 0px auto;
+}
+
+.alimentacion2 {
+    grid-area: section2;
+    text-align:center;
+    margin: 0px auto;
+    margin-left: 80px;
+    margin-right: 80px;
+}
 
 .imagenAlimentacion2 {
-/*alinear der*/
+    grid-area: section3;
+    text-align:center;
+    margin: 0px auto;
+
+}
+
+.alimentacion3 {
+    text-align:center;
+    padding-top: 80px;
+    margin: 0px auto;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .imagenAlimentacion3 {
-    /*alinear izq*/
+    grid-area: section5;
+    text-align:center;
+    margin: 0px auto;
+
 }
 
-/.imagenAlimentacion4 {
-    /*alinear der*/
+.alimentacion4 {
+    text-align:center;
+    padding-top: 80px;
+    margin: 0px auto;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.imagenAlimentacion4 {
+    grid-area: section7;
+    text-align:center;
+    margin: 0px auto;
+
 }
 
 
