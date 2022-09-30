@@ -364,6 +364,10 @@ aside{
         flex-direction: column;
     }
     
+    .header h1 {
+        
+    }
+
     .menu li{
         text-align: center;
         margin: 3px;
@@ -404,6 +408,9 @@ aside{
         grid-template-columns: 100%;
      }
 
+     .imagenAlimentacion4, .imagenAlimentacion2, .imagenAlimentacion3, .imagenAlimentacion4{
+         width:max-content;
+     }
 
 .caracteristica {
     width:300px;
