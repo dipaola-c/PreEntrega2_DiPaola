@@ -4,66 +4,6 @@
     box-sizing: border-box;
 }
 
-
-/* .grilla {
-    display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
-    grid-template-rows: 0.5fr 2fr 0.5fr;
-    grid-template-areas:
-      "header header"
-      "main aside"
-      "footer footer";
-} */
-
-/*vista mobile*/
-/* @media only screen and (min-width: 0px) and (max-width: 767px){
-	.grilla {
-    display: grid;
-    grid-template-columns: 50% 50%;
-	grid-template-rows: 100px 70px auto;
-    grid-template-areas:
-      "header header"
-      "main aside"
-      "footer footer";
- }
-    header {grid-area:header;
-        display: flex;
-        justify-content: center;} 
-        
-    div.navIzq{grid-area: navIzq;} 
-    
-    .navIzq ul, .navDer ul {
-        display: flex; justify-content: space-around;} 
-    li{
-        padding: 10px; list-style-type: none;} 
-    div.navDer{
-        grid-area: navDer;} 	
-    section.section1{
-        grid-area: section1;} 
-    section.section2{
-        grid-area: section2;} 
-    footer{
-        grid-area: footer;
-        display: flex;
-        justify-content: space-around;
-        padding-top: 20px;} }
-  */
-
-/*vista desktop*/
-/* @media only screen and (min-width: 768px){
-	.gridContainer{
-			display: grid;grid-template-areas:
-			"navIzq navIzq header header navDer navDer"	"parrafo parrafo parrafo img img img""footer footer footer footer footer footer"; grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;grid-template-rows: 100px auto 200px; }
-		header{grid-area:header; text-align: center;}
-		div.navIzq{grid-area: navIzq;} .navIzq ul, .navDer ul {display: flex; justify-content: space-around;}
-		li{padding: 10px; list-style-type: none; position: relative; top: 20px;}
-		div.navDer{grid-area: navDer;}
-		section.parrafo{grid-area: parrafo;}
-		section.imgParrafo{grid-area: img;}
-		footer{grid-area: footer;display:flex; justify-content: space-around;}	
-} */
-
-
 .fondo {
     /* grid-area: presentacion; */
     width: auto;
@@ -327,6 +267,10 @@ aside{
 
 
 .alimentacion {
+    width: auto;
+    display: flex;
+    flex-direction: column; /*column, hay mas*/
+    flex-wrap: nowrap;
     grid-area: section;
     text-align:center;
     margin: 0px auto; /*centra la section dentro de la grilla*/
@@ -336,12 +280,17 @@ aside{
 }
 
 .imagenAlimentacion1 {
+    width: auto;
     grid-area: section1;
     text-align:center;
     margin: 0px auto;
 }
 
 .alimentacion2 {
+    width: auto;
+    display: flex;
+    flex-direction: column; /*column, hay mas*/
+    flex-wrap: nowrap;
     grid-area: section2;
     text-align:center;
     margin: 0px auto;
@@ -350,6 +299,7 @@ aside{
 }
 
 .imagenAlimentacion2 {
+    width: auto;
     grid-area: section3;
     text-align:center;
     margin: 0px auto;
@@ -357,6 +307,10 @@ aside{
 }
 
 .alimentacion3 {
+    width: auto;
+    display: flex;
+    flex-direction: column; /*column, hay mas*/
+    flex-wrap: nowrap;
     text-align:center;
     padding-top: 80px;
     margin: 0px auto;
@@ -365,6 +319,7 @@ aside{
 }
 
 .imagenAlimentacion3 {
+    width: auto;
     grid-area: section5;
     text-align:center;
     margin: 0px auto;
@@ -372,6 +327,10 @@ aside{
 }
 
 .alimentacion4 {
+    width: auto;
+    display: flex;
+    flex-direction: column; /*column, hay mas*/
+    flex-wrap: nowrap;
     text-align:center;
     padding-top: 80px;
     margin: 0px auto;
@@ -380,6 +339,7 @@ aside{
 }
 
 .imagenAlimentacion4 {
+    width: auto;
     grid-area: section7;
     text-align:center;
     margin: 0px auto;
@@ -391,3 +351,81 @@ aside{
 
 
 /*PAGINA CONTACTO*/
+
+
+
+
+
+
+/*vista mobile*/
+@media only screen and (min-width: 0px) and (max-width: 767px){
+	
+    .header {
+        flex-direction: column;
+    }
+    
+    .menu li{
+        text-align: center;
+        margin: 3px;
+        padding: 6px;}
+
+    aside{
+        box-sizing: content-box;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+    }
+    
+    .caracteristica {
+        width:auto;
+        height: auto;
+        margin:auto;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .grilla {
+        display: grid;
+        grid-template-areas:
+          "header"
+          "section"
+          "section1 "
+          "section2 "
+          "section3 "
+          "section4 "
+          "section5 "
+          "section6 "
+          "section7 "
+          "footer";
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: 100%;
+     }
+
+
+.caracteristica {
+    width:300px;
+    height: auto;
+    margin:0px;
+    text-align: center;
+    padding: 10px;
+}
+     }
+
+
+
+/*vista desktop*/
+ /* @media only screen and (min-width: 768px){
+	.gridContainer{
+			display: grid;grid-template-areas:
+			"navIzq navIzq header header navDer navDer"	"parrafo parrafo parrafo img img img""footer footer footer footer footer footer"; grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;grid-template-rows: 100px auto 200px; }
+		header{grid-area:header; text-align: center;}
+		div.navIzq{grid-area: navIzq;} .navIzq ul, .navDer ul {display: flex; justify-content: space-around;}
+		li{padding: 10px; list-style-type: none; position: relative; top: 20px;}
+		div.navDer{grid-area: navDer;}
+		section.parrafo{grid-area: parrafo;}
+		section.imgParrafo{grid-area: img;}
+		footer{grid-area: footer;display:flex; justify-content: space-around;}	
+} */
