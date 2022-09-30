@@ -266,7 +266,7 @@ aside{
  }
 
 
-.alimentacion {
+#alimentacion {
     width: auto;
     display: flex;
     flex-direction: column; /*column, hay mas*/
@@ -279,14 +279,14 @@ aside{
     margin-top: 50px;
 }
 
-.imagenAlimentacion1 {
+#imagenAlimentacion1 {
     width: auto;
     grid-area: section1;
     text-align:center;
     margin: 0px auto;
 }
 
-.alimentacion2 {
+#alimentacion2 {
     width: auto;
     display: flex;
     flex-direction: column; /*column, hay mas*/
@@ -298,7 +298,7 @@ aside{
     margin-right: 80px;
 }
 
-.imagenAlimentacion2 {
+#imagenAlimentacion2 {
     width: auto;
     grid-area: section3;
     text-align:center;
@@ -306,9 +306,10 @@ aside{
 
 }
 
-.alimentacion3 {
+#alimentacion3 {
     width: auto;
     display: flex;
+    grid-area: section4;
     flex-direction: column; /*column, hay mas*/
     flex-wrap: nowrap;
     text-align:center;
@@ -318,7 +319,7 @@ aside{
     margin-right: 80px;
 }
 
-.imagenAlimentacion3 {
+#imagenAlimentacion3 {
     width: auto;
     grid-area: section5;
     text-align:center;
@@ -326,9 +327,10 @@ aside{
 
 }
 
-.alimentacion4 {
+#alimentacion4 {
     width: auto;
     display: flex;
+    grid-area: section6;
     flex-direction: column; /*column, hay mas*/
     flex-wrap: nowrap;
     text-align:center;
@@ -338,7 +340,7 @@ aside{
     margin-right: 80px;
 }
 
-.imagenAlimentacion4 {
+#imagenAlimentacion4 {
     width: auto;
     grid-area: section7;
     text-align:center;
@@ -365,13 +367,17 @@ aside{
     }
     
     .header h1 {
-        
+        font-size: 23px;
     }
 
     .menu li{
         text-align: center;
         margin: 3px;
         padding: 6px;}
+
+    nav{
+    width: auto;
+    }
 
     aside{
         box-sizing: content-box;
@@ -383,14 +389,6 @@ aside{
 
     }
     
-    .caracteristica {
-        width:auto;
-        height: auto;
-        margin:auto;
-        text-align: center;
-        padding: 10px;
-    }
-
     .grilla {
         display: grid;
         grid-template-areas:
@@ -408,8 +406,18 @@ aside{
         grid-template-columns: 100%;
      }
 
-     .imagenAlimentacion4, .imagenAlimentacion2, .imagenAlimentacion3, .imagenAlimentacion4{
-         width:max-content;
+     .textoAlimentacion {
+        width: auto;
+        display: flex;
+        flex-direction: column; /*column, hay mas*/
+        flex-wrap: nowrap;
+        grid-area: section;
+        text-align:center;
+        margin: 0px; /*centra la section dentro de la grilla*/
+    }
+
+     .imagenAlimentacion img{
+        width: 100%;
      }
 
 .caracteristica {
