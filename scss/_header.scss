@@ -1,0 +1,11 @@
+.header{
+    grid-area: header;
+    position:sticky; /*no funciona, averiguar porque o como hacerlo desde una clase de bootstrap*/
+
+
+nav.navbar.navbar-expand-lg.navbar-light{
+background-color: rgba(207, 169, 125, 0.705);
+font-family: "Kaushan_Script";
+
+    }
+} //del hader

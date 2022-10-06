@@ -1,0 +1,33 @@
+    /*footer grid*/
+    .footer {
+        grid-area: footer;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+        background-color: lightgrey;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    
+        .redes {
+            width:300px;
+            height: auto;
+            margin:auto;
+        }
+    
+        p{
+            padding: 10px;
+        }
+    
+        a{
+            margin: 10px;
+        }
+    
+        .ubicacion {
+            width:800px;
+            height: auto;
+            margin: 0px;
+        }
+    }//del footer
