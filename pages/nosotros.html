@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="/PreEntrega2_DiPaola/estilo/estilo.css">
     <link rel="shortcut icon" href="/PreEntrega2_DiPaola/img/favicon7.png">
 </head>
@@ -14,29 +15,43 @@
 <body>
 
     <header class= "header">
-        
-        <img src="/PreEntrega2_DiPaola/img/logo.png" height="80" width="80" alt="logo" />
-         <h1>Viví Sin Tacc - Comida apta celíacos</h1>
-         
-         <nav class="nav">
-            <ul class="menu">
-                <li><a href="/PreEntrega2_DiPaola/index.html">Home</a></li>
-                <li><a href="/PreEntrega2_DiPaola/pages/nosotros.html">Nosotros</a></li>
-                <li><a href="/PreEntrega2_DiPaola/pages/productos.html">Productos</a>
-                    <ul>
-                        <li><a href="/PreEntrega2_DiPaola/pages/productos.html#panesPizzas">Panes y pizzas</a></li>
-                        <li><a href="/PreEntrega2_DiPaola/pages/productos.html#budinesMuffins">Budines y muffins</a></li>
-                        <li><a href="/PreEntrega2_DiPaola/pages/productos.html#tortas">Tortas</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light" data-spy="affix" data-offset-top="30">
+            <div class="container-fluid">
+              <a class="navbar-brand me-auto" href="/PreEntrega2_DiPaola/index.html"><img src="/PreEntrega2_DiPaola/img/logo.png" height="90" width="90" alt="logo">Viví sin tacc - Comida apta celíacos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/PreEntrega2_DiPaola/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/PreEntrega2_DiPaola/pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/PreEntrega2_DiPaola/pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="/PreEntrega2_DiPaola/pages/productos.html#panesPizzas">Panes y pizzas</a></li>
+                      <li><a class="dropdown-item" href="/PreEntrega2_DiPaola/pages/productos.html#budinesMuffins">Budines y muffins</a></li>
+                      <li><a class="dropdown-item" href="/PreEntrega2_DiPaola/pages/productos.html#tortas">Tortas</a></li>
                     </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/PreEntrega2_DiPaola/pages/alimentacion.html">Alimentación celíaca</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/PreEntrega2_DiPaola/pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
                 
-                </li>
-                <li><a href="/PreEntrega2_DiPaola/pages/alimentacion.html">Alimentación Celíaca</a></li>
-                <li><a href="/PreEntrega2_DiPaola/pages/contacto.html">Contactános</a></li>
-                
-            </ul>
-         </nav>
-     
-     </header>
+              </div>
+            </div>
+          </nav>
+        
+        </header>
 
      <div id= "whatsapp" class="whatsapp">
         <a href="https://wa.link/rmwq45" target="_blank" rel="noopener">
@@ -48,7 +63,7 @@
         <section class="nosotros">
             
         
-            <img alt="productos" height="450px" width="450px" src="/PreEntrega2_DiPaola/img/galerias/producto19.png" />
+            <img class= "nosotros-img" alt="productos" width= 100% src="/PreEntrega2_DiPaola/img/galerias/producto19.png" />
             
             <h1>Viví Sin Tacc es una familia celíaca 👪 y emprendedora 💪🏼</h1>
             <h2>Cocinamos rico 😋 y gluten free 🆓 🌾</h2>
